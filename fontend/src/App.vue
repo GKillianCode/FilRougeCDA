@@ -13,6 +13,7 @@ export default{
 
 <template>
   <div class="app">
+    <NavigationComponent v-if="$route.name !== 'login'" />
     <router-view />
   </div>
 </template>
