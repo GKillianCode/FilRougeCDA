@@ -1,0 +1,26 @@
+
+
+.btn-style{
+    &-1, &-2, &-3, &-4{
+        border-radius: .4rem;
+        font-family: var(--font-1);
+        text-decoration: none;
+        color: #eee;
+        transition: .2s;
+    }
+    &-3, &-4{
+        background: none;
+    }
+    &-1{
+        background-color: var(--color-1);
+    }
+    &-2{
+        background-color: var(--color-2);
+    }
+    &-3{
+        border: 2px solid var(--color-1);
+    }
+    &-4{
+        border: 2px solid var(--color-1);
+    }
+}
