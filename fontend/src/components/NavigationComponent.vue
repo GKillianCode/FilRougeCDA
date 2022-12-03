@@ -1,7 +1,12 @@
 <script>
 export default {
     name: "NavigationComponent",
-    methods: {},
+    methods: {
+      logout(){
+        // TODO : Supprimer les cookies de connexion
+        this.$router.push('/');
+      }
+    },
 };
 </script>
 
@@ -36,6 +41,10 @@ export default {
                 <li class="navigation-item">
                   <router-link to="/home" class="navigation-link">Administration</router-link>
                 </li> -->
+
+                <li class="navigation-item">
+                  <button @click="logout" class="btn-logout btn-style-2">Se déconnecter</button>
+                </li>
             </ul>
         </div>
     </Header>
@@ -69,6 +78,7 @@ export default {
   .navigation{
     &-list{
       display: flex;
+      align-items: center;
       gap: 3rem;
     }
     &-item{
@@ -84,5 +94,9 @@ export default {
         color: #fff;
       }
     }
+  }
+
+  .btn-logout{
+    padding: .5rem 1.5rem;
   }
 </style>

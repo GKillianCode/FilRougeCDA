@@ -8,6 +8,9 @@
         color: #eee;
         transition: .2s;
     }
+    &-1, &-2{
+        border: none;
+    }
     &-3, &-4{
         background: none;
     }
@@ -18,9 +21,9 @@
         background-color: var(--color-2);
     }
     &-3{
-        border: 2px solid var(--color-1);
+        border: .2rem solid var(--color-1);
     }
     &-4{
-        border: 2px solid var(--color-1);
+        border: .2rem solid var(--color-2);
     }
 }

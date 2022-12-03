@@ -191,6 +191,9 @@ h1, h2, h3, h4, h5, h6 {
   color: #eee;
   transition: 0.2s;
 }
+.btn-style-1, .btn-style-2 {
+  border: none;
+}
 .btn-style-3, .btn-style-4 {
   background: none;
 }
@@ -201,10 +204,10 @@ h1, h2, h3, h4, h5, h6 {
   background-color: var(--color-2);
 }
 .btn-style-3 {
-  border: 2px solid var(--color-1);
+  border: 0.2rem solid var(--color-1);
 }
 .btn-style-4 {
-  border: 2px solid var(--color-1);
+  border: 0.2rem solid var(--color-2);
 }
 
 /*# sourceMappingURL=main.css.map */
